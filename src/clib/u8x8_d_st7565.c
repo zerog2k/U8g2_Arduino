@@ -972,16 +972,16 @@ static const u8x8_display_info_t u8x8_st7565_rcxr01_display_info =
   /* post_reset_wait_ms = */ 1, 
   /* sda_setup_time_ns = */ 50,		/* st7565 datasheet, table 26, tsds */
   /* sck_pulse_width_ns = */ 120,	/* half of cycle time (100ns according to datasheet), AVR: below 70: 8 MHz, >= 70 --> 4MHz clock */
-  /* sck_clock_hz = */ 4000000UL,	/* since Arduino 1.6.0, the SPI bus speed in Hz. Should be  1000000000/sck_pulse_width_ns */
+  /* sck_clock_hz = */ 1000000UL,	/* since Arduino 1.6.0, the SPI bus speed in Hz. Should be  1000000000/sck_pulse_width_ns */
   /* spi_mode = */ 0,		/* active high, rising edge */
   /* i2c_bus_clock_100kHz = */ 4,
   /* data_setup_time_ns = */ 40,	/* st7565 datasheet, table 24, tds8 */
   /* write_pulse_width_ns = */ 80,	/* st7565 datasheet, table 24, tcclw */
-  /* tile_width = */ 16,		/* width of 16*8=128 pixel */
+  /* tile_width = */ 12,		/* width of 16*8=128 pixel */
   /* tile_hight = */ 4,
   /* default_x_offset = */ 0,
   /* flipmode_x_offset = */ 0,
-  /* pixel_width = */ 128,
+  /* pixel_width = */ 96,
   /* pixel_height = */ 32
 };
 
